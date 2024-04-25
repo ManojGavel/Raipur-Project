@@ -920,7 +920,7 @@ hr {
 
 @media only screen and (max-width: 767px) {
   .heroSectionIn {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 15px 20px 15px;
     border-radius: 25px;
   }
 
@@ -928,7 +928,12 @@ hr {
     gap: 0px 15px;
     width: 100%;
     justify-content: space-between;
-  }
+    flex-direction: column;
+    gap: 20px 0px;
+}
+.headerMenu {
+  width: 100%;
+}
 
   .headerAction {
     position: absolute;
@@ -978,14 +983,27 @@ hr {
 
   .headerAction h3 {
     color: var(--body-bg);
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .headerMenu ul {
-    gap: 0px 20px;
-    padding: 18px 15px;
+    gap: 0px 10px;
+    padding: 10px 10px;
     border-radius: 60px;
-  }
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.headerMenu ul li a {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.headerMenu ul li.active a {
+  padding: 4px 8px;
+  display: block;
+}
 
   .bannerVideoBox {
     min-height: 260px;
@@ -1002,7 +1020,7 @@ hr {
   }
 
   .heroSection {
-    padding: 20px 15px;
+    padding: 15px 15px;
   }
 
   .introSection p {
